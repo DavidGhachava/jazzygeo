@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[functions.phrasebook]
+  included_files = ["sealed/**"]
